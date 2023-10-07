@@ -1,6 +1,19 @@
-import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../Providers/AuthProvider";
 
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+
+  const handleLogOut = () =>{
+    logOut()
+    .then(result => {
+      console.log(result.user);
+    })
+    .catch(error => {
+      console.log(error);
+    });
+  }
   const subLinks = (
     <>
       <li>
@@ -66,12 +79,18 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>
       </div>
       <div className="navbar-end gap-3">
-        <NavLink to="/login" className="btn">
-          Login
-        </NavLink>
-        <NavLink to="/register" className="btn">
-          Register
-        </NavLink>
+        {user ? (
+          <button onClick={handleLogOut} className="btn">LogOut</button>
+        ) : (
+          <>
+            <Link to="/login">
+              <button className="btn">Log in</button>
+            </Link>
+            <Link to="register">
+              <button className="btn">Register</button>
+            </Link>
+          </>
+        )}
       </div>
     </div>
   );
