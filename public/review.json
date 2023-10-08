@@ -1,0 +1,32 @@
+[
+  {
+      "id": 1,
+      "name": "Beautiful Beach Wedding",
+      "image": "https://i.ibb.co/sC68VsM/pexels-italo-melo-2379004.jpg",
+      "review": "The beach wedding organized by this team was absolutely stunning. The setup, decorations, and overall ambiance were beyond our expectations. We couldn't have asked for a more perfect day!!"
+  },
+  {
+      "id": 2,
+      "name": "Whimsical Garden Party",
+      "image": "https://i.ibb.co/9sC6JJ5/pexels-andrea-piacquadio-712513.jpg",
+      "review": "The garden party organized by this team was a dream come true. The floral arrangements and atmosphere created were magical. Our guests were in awe of the entire event."
+  },
+  {
+      "id": 3,
+      "name": "Fun-filled Picnic Day",
+      "image": "https://i.ibb.co/BVHdn9w/pexels-vinicius-wiesehofer-1130626.jpg",
+      "review": "The picnic day organized by this team was filled with joy and laughter. The games, food, and activities were a hit with both kids and adults. It was a perfect day out in the sun!Thank you for a memorable evening!"
+  },
+  {
+      "id": 4,
+      "name": "Memorable Birthday Bash",
+      "image": "https://i.ibb.co/4dms5z6/man-isolated-showing-emotions-end-gestures.jpg",
+      "review": "The birthday party organized by this team was a blast! The decorations, entertainment, and overall coordination were outstanding. Our guests couldn't stop raving about it. It was a day to remember!"
+  },
+  {
+      "id": 5,
+      "name": "Elegant Corporate Gala",
+      "image": "https://i.ibb.co/0ZJyP4B/handsome-bearded-guy-posing-against-white-wall.jpg",
+      "review": "The corporate gala organized by this team was a huge success. The attention to detail, professionalism, and seamless execution were commendable. Our clients and partners were thoroughly impressed."
+  }
+]
