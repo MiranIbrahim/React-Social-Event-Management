@@ -15,7 +15,7 @@ const CareerCard = ({ job }) => {
           <h4>{requiredEducation}</h4>
         </td>
         <td>
-          <h4>{salary}</h4>
+          <h4>BDT {salary}</h4>
         </td>
       </tr>
     );

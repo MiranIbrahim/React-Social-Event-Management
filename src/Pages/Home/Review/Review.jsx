@@ -12,7 +12,7 @@ const Review = () => {
     return (
         <div className='my-10'> 
             <h2 className="text-2xl text-center mb-5">Reviews</h2>
-            <Marquee>
+            <Marquee pauseOnHover={true}>
             {
                 reviews.map(review => <ReviewCard 
                 key={review.id} reviews={review}></ReviewCard>)

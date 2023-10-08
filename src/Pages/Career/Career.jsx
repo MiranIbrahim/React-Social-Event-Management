@@ -13,7 +13,7 @@ const Career = () => {
             <th>Job Name</th>
             <th>Required Skills</th>
             <th>Education</th>
-            <th>Salary</th>
+            <th>Salary /mo</th>
           </tr>
         </thead>
         <tbody>
