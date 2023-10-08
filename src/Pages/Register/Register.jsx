@@ -10,10 +10,12 @@ const Register = () => {
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
+        
 
         createUser(email,password)
         .then(result =>{
             console.log(result.user);
+            e.target.reset();
         })
         .catch(error => {
             console.log(error);

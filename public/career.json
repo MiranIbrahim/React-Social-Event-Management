@@ -1,0 +1,87 @@
+[
+    {
+      "id": 1,
+      "name": "Event Planner",
+      "description": "Event planners are responsible for planning and executing all aspects of an event, from the initial concept to the final cleanup. They work with clients to understand their needs and create a budget, then coordinate with vendors to book the venue, catering, entertainment, and other necessary services. Event planners also manage the logistics of the event, such as guest registration, transportation, and on-site setup and coordination.",
+      "salary": 60000,
+      "requiredSkills": [
+        "Excellent organizational and time management skills",
+        "Ability to manage multiple projects simultaneously",
+        "Strong communication and interpersonal skills",
+        "Creativity and problem-solving skills",
+        "Ability to work under pressure"
+      ],
+      "requiredEducation": [
+        "Bachelor's degree in event management, hospitality, or a related field is preferred, but not required.",
+        "Experience in event planning is a plus."
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Event Coordinator",
+      "description": "Event coordinators assist event planners with the day-to-day tasks of planning and executing events. They are responsible for tasks such as booking vendors, managing budgets, and coordinating logistics. Event coordinators also work with clients to answer questions and ensure that their needs are met.",
+      "salary": 45000,
+      "requiredSkills": [
+        "Excellent organizational and time management skills",
+        "Ability to work independently and as part of a team",
+        "Strong communication and interpersonal skills",
+        "Ability to work under pressure"
+      ],
+      "requiredEducation": [
+        "Bachelor's degree in event management, hospitality, or a related field is preferred, but not required.",
+        "Experience in event planning or coordination is a plus."
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Venue Manager",
+      "description": "Venue managers are responsible for the day-to-day operations of an event venue. They are responsible for booking events, managing staff, and overseeing the setup and cleanup of events. Venue managers also work with clients to ensure that their events are successful.",
+      "salary": 55000,
+      "requiredSkills": [
+        "Excellent organizational and time management skills",
+        "Ability to work independently and as part of a team",
+        "Strong communication and interpersonal skills",
+        "Ability to work under pressure"
+      ],
+      "requiredEducation": [
+        "Bachelor's degree in event management, hospitality, or a related field is preferred, but not required.",
+        "Experience in event venue management is a plus."
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Catering Manager",
+      "description": "Catering managers are responsible for planning and executing catering services for events. They work with clients to understand their needs and create a budget, then coordinate with vendors to book the food, drinks, and other necessary services. Catering managers also manage the logistics of the event, such as food preparation, service, and cleanup.",
+      "salary": 50000,
+      "requiredSkills": [
+        "Excellent organizational and time management skills",
+        "Ability to manage multiple projects simultaneously",
+        "Strong communication and interpersonal skills",
+        "Creativity and problem-solving skills",
+        "Ability to work under pressure"
+      ],
+      "requiredEducation": [
+        "Bachelor's degree in event management, hospitality, or a related field is preferred, but not required.",
+        "Experience in catering management is a plus."
+      ]
+    },
+    {
+        "id": 5,
+        "name": "Full Stack Web Developer",
+        "description": "Full stack web developers are responsible for both the front-end and back-end development of websites and web applications. They use their skills in HTML, CSS, JavaScript, and server-side programming languages to create websites and web applications that are both visually appealing and functional.",
+        "salary": 100000,
+        "requiredSkills": [
+          "Strong knowledge of HTML, CSS, and JavaScript",
+          "Experience with server-side programming languages such as Python, Java, or Ruby on Rails",
+          "Knowledge of SQL and database management",
+          "Ability to work with a variety of web development tools and frameworks",
+          "Excellent problem-solving and analytical skills"
+        ],
+        "requiredEducation": [
+          "Bachelor's degree in computer science or a related field is preferred, but not required.",
+          "Experience in web development is a plus."
+        ]
+      }
+      
+    
+]  

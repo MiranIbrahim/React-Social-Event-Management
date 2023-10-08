@@ -1,10 +1,14 @@
 import { useContext } from "react";
 import { FaGoogle } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
+import { GoogleAuthProvider } from "firebase/auth";
 
 const Login = () => {
-    const {signIn} = useContext(AuthContext);
+    const {signIn, googleLogin} = useContext(AuthContext);
+    const googleProvider = new GoogleAuthProvider();
+    const location = useLocation();
+    const navigate = useNavigate();
 
     const handleLogin = e =>{
         e.preventDefault();
@@ -13,6 +17,19 @@ const Login = () => {
 
         signIn(email,password)
         .then(result=>{
+            console.log(result.user);
+            e.target.reset();
+            navigate(location?.state? location.state : '/')
+
+        })
+        .catch(error => {
+            console.log(error);
+        })
+    };
+
+    const handleGoogleLogin = () =>{
+        googleLogin(googleProvider)
+        .then(result => {
             console.log(result.user);
         })
         .catch(error => {
@@ -61,6 +78,7 @@ const Login = () => {
         </div>
         <div className="flex mt-4 gap-x-2">
           <button
+          onClick={handleGoogleLogin}
             type="button"
             className="flex items-center justify-center w-full p-2 border border-gray-600 rounded-md focus:ring-2 focus:ring-offset-1 focus:ring-violet-600 gap-2"
           >

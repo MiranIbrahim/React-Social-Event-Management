@@ -3,6 +3,8 @@ import Roots from "../Roots/Roots";
 import Home from "../Pages/Home/Home";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
+import Career from "../Pages/Career/Career";
+
 
 const router = createBrowserRouter([
   {
@@ -21,6 +23,11 @@ const router = createBrowserRouter([
         path: "/register",
         element:<Register></Register>,
       },
+      {
+        path: "/career",
+        element:<Career></Career>, 
+        loader: () => fetch('career.json')
+      }
     ],
   },
 ]);

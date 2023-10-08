@@ -10,14 +10,14 @@ const Hero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((currentIndex + 1) % images.length);
-    }, 2000);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, [images]);
 
   return (
     <div className="carousel rounded-box max-h-[80vh]">
-      <div className="carousel-item w-full" id="">
+      <div className="carousel-item w-3/4 mx-auto" id="">
         <img className="w-full" src={images[currentIndex]} alt="Burger" />
       </div>
     </div>
