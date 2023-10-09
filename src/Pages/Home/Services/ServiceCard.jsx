@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 
 import { Link } from "react-router-dom";
 
@@ -5,7 +6,10 @@ import { Link } from "react-router-dom";
 const ServiceCard = ({services}) => {
   const { id, name, image, description } = services;
   return (
-    <div className="card md:w-80 bg-base-100 shadow-xl">
+    <div data-aos="flip-left"
+    data-aos-easing="ease-in-back"
+    data-aos-delay="300"
+    data-aos-offset="10" className="card md:w-80 bg-base-100 shadow-xl">
       <figure>
         <img className="max-h-[200px] w-full"
           src={image}

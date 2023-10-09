@@ -1,6 +1,9 @@
 ## README.md
 
 ### Question 1
+let greeting;
+greetign = {};
+console.log(greetign);
 
 **Answer:** B. ReferenceError: greetign is not defined
 
@@ -9,6 +12,11 @@
 The variable `greetign` is declared but never initialized. Therefore, when you try to access it, you will get a ReferenceError.
 
 ### Question 2
+function sum(a, b) {
+  return a + b;
+}
+
+sum(1, "2");
 
 **Answer:** A. NaN
 
@@ -17,6 +25,12 @@ The variable `greetign` is declared but never initialized. Therefore, when you t
 The `sum()` function adds two numbers together. However, when you try to add a number and a string, JavaScript will try to convert the string to a number. In this case, the string `"2"` will be converted to the number 2. Therefore, the result of the `sum()` function will be 3. However, the `console.log()` function will print the result as a string, so the output will be `"3"`.
 
 ### Question 3
+const food = ["🍕", "🍫", "🥑", "🍔"];
+const info = { favoriteFood: food[0] };
+
+info.favoriteFood = "🍝";
+
+console.log(food);
 
 **Answer:** A. ['🍕', '🍫', '🥑', '🍔']
 
@@ -25,6 +39,11 @@ The `sum()` function adds two numbers together. However, when you try to add a n
 The `food` array is a constant, which means that its contents cannot be changed. Therefore, when you change the value of `info.favoriteFood`, the `food` array remains unchanged.
 
 ### Question 4
+function sayHi(name) {
+  return `Hi there, ${name}`;
+}
+
+console.log(sayHi());
 
 **Answer:** B. Hi there, undefined
 
@@ -33,6 +52,14 @@ The `food` array is a constant, which means that its contents cannot be changed.
 The `sayHi()` function takes a name as a parameter, but when you call the function, you do not pass in a name. Therefore, the value of the `name` parameter will be `undefined`. When the function returns, it will return the string `Hi there, ${name}`, which will be evaluated to `Hi there, undefined`.
 
 ### Question 5
+let count = 0;
+const nums = [0, 1, 2, 3];
+
+nums.forEach((num) => {
+  if (num) count += 1;
+});
+
+console.log(count);
 
 **Answer:** C. 3
 

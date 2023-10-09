@@ -17,7 +17,7 @@ const Hero = () => {
   }, [images.length]);
 
   return (
-    <div className="carousel sm:w-[750px] md:w-[950px] lg:w-[1150px] mx-auto">
+    <div data-aos="zoom-in" className="carousel sm:w-[750px] md:w-[950px] lg:w-[1150px] mx-auto">
       <div
         className="carousel-item transition-transform duration-500 ease-in-out"
         style={{

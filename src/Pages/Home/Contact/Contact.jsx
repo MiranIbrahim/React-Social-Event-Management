@@ -5,12 +5,14 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 
+
+
 const Contact = () => {
   return (
-    <div>
+    <div >
         <h2 className="text-4xl font-extrabold mt-20 text-center">Contact</h2>
-      <div className="my-24 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 justify-center">
-        <div className="card w-60 glass bg-[#BAE1FF]">
+      <div  className="my-24 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 justify-center">
+        <div data-aos="zoom-in" className="card w-60 glass bg-[#BAE1FF]">
           <figure className="px-10 pt-10">
             <FaPhoneVolume className="text-4xl"></FaPhoneVolume>
           </figure>
@@ -19,7 +21,7 @@ const Contact = () => {
             <p className="">+09266001293</p>
           </div>
         </div>
-        <div className="card w-60 glass bg-[#BAE1FF]">
+        <div data-aos="zoom-in-up"  className="card w-60 glass bg-[#BAE1FF]">
           <figure className="px-10 pt-10">
             <FaTelegramPlane className="text-4xl"></FaTelegramPlane>
           </figure>
@@ -28,7 +30,7 @@ const Contact = () => {
             <p className="">eventplaza@gmail.com</p>
           </div>
         </div>
-        <div className="card w-60 glass bg-[#BAE1FF]">
+        <div data-aos="zoom-in-up" className="card w-60 glass bg-[#BAE1FF]">
           <figure className="px-10 pt-10">
             <FaWhatsapp className="text-4xl"></FaWhatsapp>
           </figure>
@@ -37,7 +39,7 @@ const Contact = () => {
             <p className="">+88 019212992011</p>
           </div>
         </div>
-        <div className="card w-60 glass bg-[#BAE1FF] ">
+        <div data-aos="zoom-in" className="card w-60 glass bg-[#BAE1FF] ">
           <figure className="px-10 pt-10">
             <FaMapMarkerAlt className="text-4xl"></FaMapMarkerAlt>
           </figure>
