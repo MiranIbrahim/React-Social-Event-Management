@@ -5,6 +5,7 @@ import { AuthContext } from "../../Providers/AuthProvider";
 const Register = () => {
   const [regFailed, setRegFailed] = useState("");
   const [success, setSuccess] = useState("");
+  const [url, setUrl] = useState(null);
   const navigate = useNavigate();
   const { createUser } = useContext(AuthContext);
 
@@ -12,6 +13,7 @@ const Register = () => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
+    const photoURL = e.target.photoURL.value;
     setRegFailed("");
     setSuccess("");
 
@@ -23,9 +25,12 @@ const Register = () => {
       return;
     }
 
-    createUser(email, password)
+    createUser(email, password, photoURL)
       .then((result) => {
         console.log(result.user);
+        result.user.photoURL = url;
+        setUrl(photoURL);
+        
         setSuccess("Successfully Registered");
         e.target.reset();
         navigate("/");
@@ -47,6 +52,18 @@ const Register = () => {
           Sign UP
         </h1>
         <form onSubmit={handleRegister} className="mt-6">
+          <div className="mb-2">
+            <label className="block text-sm font-semibold text-gray-800">
+              Profile Url
+            </label>
+            <input
+              type="url"
+              name="photoURL"
+              placeholder="Paste image URL"
+              required
+              className="block w-full px-4 py-2 mt-2 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
+            />
+          </div>
           <div className="mb-2">
             <label className="block text-sm font-semibold text-gray-800">
               Email

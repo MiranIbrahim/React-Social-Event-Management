@@ -70,8 +70,13 @@ The `forEach()` method iterates over the elements of an array and calls a callba
 
 
 
-
+### Features of this site : 
+1. User Registration
+2. Authentication
+3. AOS
+4. Private Route
+5. Password validation
 
 
 repository link : https://github.com/programming-hero-web-course-4/b8a9-event-management-MiranIbrahim
-live link : 
+live link : https://react-social-event-management.web.app/?fbclid=IwAR0T13869RBTgYP37pKBmQYwrDZ0U0tzuZfPM4-7Qm1x3y_494Fb7vObknM
