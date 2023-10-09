@@ -1,28 +1,42 @@
-import birthday from "../../assets/birthday-banner.jpg";
-import wedding from "../../assets/wedding-banner.jpg";
-import family from "../../assets/family-banner.jpg";
 import { useEffect, useState } from "react";
+import birthday from '../../assets/birthday.jpg';
+import anniversary from '../../assets/anniversary.jpg';
+import wedding from '../../assets/wedding.jpg';
+import picnic from '../../assets/picnic.jpg';
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const images = [family, wedding, birthday];
+  const images = [picnic, wedding, birthday, anniversary];
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((currentIndex + 1) % images.length);
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 3000);
 
     return () => clearInterval(interval);
-  }, [images]);
+  }, [images.length]);
 
   return (
-    <div className="carousel rounded-box max-h-[80vh]">
-      <div className="carousel-item w-3/4 mx-auto" id="">
-        <img className="w-full" src={images[currentIndex]} alt="Burger" />
+    <div className="carousel sm:w-[750px] md:w-[950px] lg:w-[1150px] mx-auto">
+      <div
+        className="carousel-item transition-transform duration-500 ease-in-out"
+        style={{
+          transform: `translateX(-${currentIndex * (100 / images.length)}%)`
+        }}
+      >
+        {images.map((image, index) => (
+          <div className="sm:w-[750px] md:w-[950px] lg:w-[1150px] max-h-[88vh]" key={index}>
+            <img
+              className="sm:w-[750px] md:w-[950px] lg:w-[1150px] h-full "
+              src={image}
+            />
+          </div>
+        ))}
       </div>
     </div>
   );
 };
 
 export default Hero;
+
 

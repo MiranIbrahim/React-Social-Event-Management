@@ -1,10 +1,11 @@
+
 import { Link } from "react-router-dom";
 
 
 const ServiceCard = ({services}) => {
   const { id, name, image, description } = services;
   return (
-    <div className="card md:w-80 lg:w-96 bg-base-100 shadow-xl">
+    <div className="card md:w-80 bg-base-100 shadow-xl">
       <figure>
         <img className="max-h-[200px] w-full"
           src={image}
@@ -14,13 +15,16 @@ const ServiceCard = ({services}) => {
         <h2 className="card-title">{name}</h2>
         <p>{description}</p>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary"><Link to={`/service/${id}`}>
+          <Link 
+          className="btn btn-primary"
+          to={`/service/${id}`} 
+          state={services}>
           Show Details
-          </Link></button>
+          </Link>
         </div>
       </div>
     </div>
   );
 };
 
-export default ServiceCard;
+export default (ServiceCard);

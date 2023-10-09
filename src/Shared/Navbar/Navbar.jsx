@@ -14,29 +14,15 @@ const Navbar = () => {
         console.log(error);
       });
   };
-  const subLinks = (
-    <>
-      <li>
-        <NavLink to="/standard">Standard Package</NavLink>
-      </li>
-      <li>
-        <NavLink to="/premium">Premium Package</NavLink>
-      </li>
-      <li>
-        <NavLink to="/custom">Custom Package</NavLink>
-      </li>
-    </>
-  );
+
+
   const navLinks = (
     <>
       <li>
         <NavLink to="/">Home</NavLink>
       </li>
       <li tabIndex={0}>
-        <details>
-          <summary>Package</summary>
-          <ul className="p-2">{subLinks}</ul>
-        </details>
+        <NavLink to="/premium">Premium Services</NavLink>
       </li>
       <li>
         <NavLink to="/career">Career</NavLink>
@@ -45,7 +31,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 bg-[#BAE1FF]">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -81,6 +67,7 @@ const Navbar = () => {
       <div className="navbar-end gap-3">
         {user ? (
           <>
+          <img src={user.photoURL} alt="" className="rounded-full"/>
             <p>{user.email}</p>
             <button onClick={handleLogOut} className="btn">
               LogOut

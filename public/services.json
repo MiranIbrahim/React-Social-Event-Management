@@ -4,41 +4,47 @@
         "name": "Wedding Planning",
         "description": "We specialize in creating magical weddings tailored to your dreams. From venue selection to floral arrangements, we handle every detail to ensure your special day is unforgettable.",
         "image": "https://i.ibb.co/Wks3M1y/1.jpg",
-        "price": "$5000 - $15000"
+        "price": "$5000 - $15000",
+        "service_type": 1
     },
     {
         "id": 2,
         "name": "Birthday Parties",
         "description": "Let us make your birthday celebration extraordinary. Our team will plan and execute a party that perfectly captures your personality and style, leaving you with wonderful memories.",
         "image": "https://i.ibb.co/y0rVJ3p/2.jpg",
-        "price": "$1000 - $5000"
+        "price": "$1000 - $5000",
+        "service_type": 1
     },
     {
         "id": 3,
         "name": "Team Building Activities",
         "description": "Foster team unity and productivity with our engaging team building activities. From outdoor adventures to indoor challenges, we create experiences that strengthen your team.",
         "image": "https://i.ibb.co/NsNfgpX/3.jpg",
-        "price": "$1500 - $5000"
+        "price": "$1500 - $5000",
+        "service_type": 1
     },
     {
         "id": 4,
         "name": "Picnics and Outings",
         "description": "Relax and enjoy a day out with your team or family. We organize fun-filled picnics with exciting activities, delicious food, and a beautiful outdoor setting.",
         "image": "https://i.ibb.co/6rZBj9r/4.jpg",
-        "price": "$500 - $2000"
+        "price": "$500 - $2000",
+        "service_type": 2
     },
     {
         "id": 5,
         "name": "Themed Parties",
         "description": "Transform any venue into a wonderland with our themed parties. From masquerade balls to tropical luaus, we bring your vision to life with creative decor and entertainment.",
         "image": "https://i.ibb.co/2MBm3ps/5.jpg",
-        "price": "$1500 - $7000"
+        "price": "$1500 - $7000",
+        "service_type": 2
     },
     {
         "id": 6,
         "name": "Holiday Celebrations",
         "description": "Make the holidays special with our festive celebrations. Whether it's a Halloween bash or a New Year's Eve extravaganza, we create memorable experiences for you and your guests.",
         "image": "https://i.ibb.co/4FrFrHz/6.jpg",
-        "price": "$800 - $3000"
+        "price": "$800 - $3000",
+        "service_type": 2
     }
 ]
