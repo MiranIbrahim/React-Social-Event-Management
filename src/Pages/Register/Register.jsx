@@ -12,8 +12,6 @@ const Register = () => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
-    const photoURL = e.target.photoURL.value;
-
     setRegFailed("");
     setSuccess("");
 
@@ -49,18 +47,6 @@ const Register = () => {
           Sign UP
         </h1>
         <form onSubmit={handleRegister} className="mt-6">
-          <div className="mb-2">
-            <label className="block text-sm font-semibold text-gray-800">
-              Image Url
-            </label>
-            <input
-              type="text"
-              name="photo"
-              placeholder="Paste your image url (optional)"
-              
-              className="block w-full px-4 py-2 mt-2 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
-            />
-          </div>
           <div className="mb-2">
             <label className="block text-sm font-semibold text-gray-800">
               Email

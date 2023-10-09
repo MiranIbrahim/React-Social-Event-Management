@@ -67,7 +67,6 @@ const Navbar = () => {
       <div className="navbar-end gap-3">
         {user ? (
           <>
-          <img src={user.photoURL} alt="" className="rounded-full"/>
             <p>{user.email}</p>
             <button onClick={handleLogOut} className="btn">
               LogOut
